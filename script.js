@@ -1,10 +1,11 @@
-// ---------- Portfolio Data (from your resume) ----------
+// ---------- Portfolio Data ----------
 const portfolioData = {
   name: "Satwik Shreshth",
   title: "Software Developer",
   location: "Gaya, Bihar",
   email: "satwikshreshth2002@gmail.com",
   phone: "+91 72600 91323",
+
   links: {
     linkedin:
       "https://www.linkedin.com/in/satwik-shreshth-5310372b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -13,6 +14,27 @@ const portfolioData = {
     resume:
       "https://drive.google.com/file/d/1sQ3UfSMGn2rYDhONTGmJTBT4BRqf0V9y/view?usp=drive_link"
   },
+
+  // ---------- Certifications ----------
+  certifications: [
+    {
+      title:
+        "Computer Aided Decision Systems - Industrial Practices using Big Analytics (NPTEL)",
+      description:
+        "Studied decision support systems, optimization models, industrial workflows, and big data analytics."
+    },
+    {
+      title: "Ethical Hacking (NPTEL)",
+      description:
+        "Learned vulnerability assessment, penetration testing, malware analysis, and cyber security fundamentals."
+    },
+    {
+      title: "Internet of Things (NPTEL)",
+      description:
+        "Covered IoT architecture, sensors, embedded programming, communication protocols, and real-world IoT applications."
+    }
+  ],
+
   skills: [
     {
       category: "Programming Languages",
@@ -44,12 +66,14 @@ const portfolioData = {
       ]
     }
   ],
+
   projects: [
     {
-      title: "Satellite-Based Land Use / Land Cover Analysis Using Random Forest",
+      title:
+        "Satellite-Based Land Use / Land Cover Analysis Using Random Forest",
       type: ["ml", "remote-sensing"],
       description:
-        "Developed a satellite-based LULC classification workflow using Random Forest on multispectral imagery. Integrated pre-processing, feature extraction, and classifier tuning to generate accurate thematic maps.",
+        "Developed a satellite-based LULC classification workflow using Random Forest on multispectral imagery.",
       tech: ["Python", "Random Forest", "Remote Sensing", "GIS"],
       role:
         "Designed and implemented the classification pipeline, from data preparation to accuracy assessment.",
@@ -57,13 +81,14 @@ const portfolioData = {
       demo: ""
     },
     {
-      title: "Image-to-Sketch Generation Using U-Net Convolutional Neural Network",
+      title:
+        "Image-to-Sketch Generation Using U-Net Convolutional Neural Network",
       type: ["ml"],
       description:
-        "Implemented a U-Net based deep learning model that converts natural images into sketch-like representations, leveraging encoder–decoder architecture and skip connections for structural preservation.",
+        "Implemented a U-Net based deep learning model that converts natural images into sketch-like representations.",
       tech: ["Python", "U-Net", "Deep Learning", "Image Processing"],
       role:
-        "Built and trained the model, handled data augmentation, and evaluated visual quality and structural consistency.",
+        "Built and trained the model, handled data augmentation, and evaluated visual quality.",
       github: "",
       demo: ""
     },
@@ -71,10 +96,10 @@ const portfolioData = {
       title: "Interactive Portfolio Website",
       type: ["web"],
       description:
-        "Designed and developed a fully responsive personal portfolio to showcase projects, education, and experience with animated UI elements and modern aesthetics.",
+        "Designed and developed a fully responsive portfolio with animations and interactive UI elements.",
       tech: ["HTML", "CSS", "JavaScript"],
       role:
-        "Implemented layout, animations, and interaction logic using vanilla JavaScript and CSS.",
+        "Implemented layout, animations, and interaction logic using vanilla JavaScript.",
       github: "https://github.com/satwik-shreshth/Satwik-Portolio",
       demo: "https://satwik-shreshth.github.io/Satwik-Portolio/"
     },
@@ -82,14 +107,15 @@ const portfolioData = {
       title: "NDWI-Based Water Bodies Mapping Using Satellite Imagery",
       type: ["remote-sensing", "ml"],
       description:
-        "Applied the Normalized Difference Water Index (NDWI) to multispectral satellite imagery to automatically detect and map surface water bodies, supporting hydrological and environmental analysis.",
+        "Applied NDWI to multispectral satellite imagery to detect and map surface water bodies.",
       tech: ["NDWI", "Remote Sensing", "Python", "GIS"],
       role:
-        "Processed imagery, computed NDWI, and post-processed results for cartographic visualization and validation.",
+        "Processed imagery, computed NDWI, and prepared visualizations for interpretation.",
       github: "",
       demo: ""
     }
   ],
+
   experiences: [
     {
       category: "Research Experience",
@@ -99,7 +125,7 @@ const portfolioData = {
           org: "India Space Academy",
           period: "Jul 2025 – Aug 2025",
           description:
-            "Worked on Land Use / Land Cover classification and water body mapping using NDWI. Involved in satellite data preprocessing, applying classification algorithms, and interpreting geospatial outputs."
+            "Worked on LULC classification and NDWI-based mapping. Processed satellite data and applied classification algorithms."
         }
       ]
     },
@@ -111,7 +137,7 @@ const portfolioData = {
           org: "Bytes Softech Pvt. Ltd. (C-DAC ATC Delhi)",
           period: "Feb 2024 – Aug 2024",
           description:
-            "Conducted and supported large-scale examinations including AFCAT, Agniveer Vayu, and ICG as technical representative. Gained experience in software handling, database management, coordination, and real-time system troubleshooting."
+            "Supported examinations including AFCAT, Agniveer Vayu, and ICG. Managed software, troubleshooting, and databases."
         }
       ]
     },
@@ -119,36 +145,38 @@ const portfolioData = {
       category: "Leadership & Activities",
       items: [
         {
-          title: "Team Representative, Bihar (NSS) – 23rd National Youth Festival",
+          title:
+            "Team Representative, Bihar (NSS) – 23rd National Youth Festival",
           org: "Lucknow",
           period: "Jan 2020",
           description:
-            "Volunteered and served as team representative for the Bihar contingent at the 23rd National Youth Festival, contributing to coordination and cultural exchange."
+            "Served as Bihar contingent representative, contributing to coordination and cultural activities."
         },
         {
-          title: "Team Representative, Bihar (NSS) – National Integration Camp",
+          title:
+            "Team Representative, Bihar (NSS) – National Integration Camp",
           org: "Vinoba Bhave University, Hazaribagh",
           period: "March-2020",
           description:
-            "Participated in inter-state cultural exchange and led social awareness activities promoting national integration and teamwork."
+            "Participated in cultural exchange and organized social campaigns."
         },
         {
           title: "NSS Volunteer",
           org: "National Service Scheme",
           period: "2019 – 2026",
-          description:
-            "Actively engaged in community outreach, social service activities, and campus initiatives under NSS."
+          description: "Actively participated in social and campus initiatives."
         },
         {
           title: "Member – Cultural Committee",
           org: "Sikkim University Students Association (SUSA)",
           period: "2024 – 2025",
           description:
-            "Organized and coordinated multiple cultural events within the university, enhancing student engagement and campus culture."
+            "Managed and coordinated cultural events across the university."
         }
       ]
     }
   ],
+
   education: [
     {
       degree: "Master of Computer Application (MCA)",
@@ -175,6 +203,7 @@ const portfolioData = {
       score: "81%"
     }
   ],
+
   socials: [
     {
       name: "Email",
@@ -194,7 +223,7 @@ const portfolioData = {
     {
       name: "LinkedIn",
       url:
-        "https://www.linkedin.com/in/satwik-shreshth-5310372b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "https://www.linkedin.com/in/satwik-shreshth-5310372b7",
       icon: "💼",
       platform: "linkedin",
       description: "View my professional profile"
@@ -215,8 +244,7 @@ const portfolioData = {
     },
     {
       name: "Instagram",
-      url:
-        "https://www.instagram.com/satwik_shreshth?igsh=MTFqb3k4aG96Y3Vr",
+      url: "https://www.instagram.com/satwik_shreshth",
       icon: "📸",
       platform: "instagram",
       description: "Follow me on Instagram"
@@ -246,7 +274,7 @@ const portfolioData = {
   ]
 };
 
-// ------------ Portfolio App ------------
+// ---------- Portfolio App ----------
 class PortfolioApp {
   constructor() {
     this.currentSection = "home";
@@ -265,6 +293,7 @@ class PortfolioApp {
     this.renderProjects();
     this.renderExperience();
     this.renderEducation();
+    this.renderCertifications();
     this.renderSocialLinks();
     this.setupThemeToggle();
     this.setupContactForm();
@@ -274,9 +303,32 @@ class PortfolioApp {
     this.setFooterYear();
   }
 
+  // ---------- Certifications Rendering ----------
+  renderCertifications() {
+    const container = document.querySelector(
+      "#certifications .certifications-container"
+    );
+    if (!container) return;
+
+    container.innerHTML = `
+      <ul class="cert-list">
+        ${portfolioData.certifications
+          .map(
+            (c) => `
+          <li>
+            <strong>${c.title}</strong>
+            <p style="margin-top:5px;color:var(--text-secondary);font-size:0.9rem;">
+              ${c.description}
+            </p>
+          </li>`
+          )
+          .join("")}
+      </ul>
+    `;
+  }
+
   setupClickSound() {
     try {
-      // optional: add small click.mp3 next to your js
       this.clickSound = new Audio("click.mp3");
     } catch {
       this.clickSound = null;
@@ -430,7 +482,6 @@ class PortfolioApp {
       )
       .join("");
 
-    // subtle fade-in
     document.querySelectorAll(".skill-card").forEach((card, index) => {
       card.style.opacity = "0";
       card.style.transform = "translateY(25px)";
@@ -453,8 +504,9 @@ class PortfolioApp {
           : portfolioData.projects.filter((p) => p.type.includes(filter));
 
       if (!filtered.length) {
-        grid.innerHTML =
-          '<p style="text-align:center;color:var(--text-secondary);font-size:0.9rem;">No projects in this category yet.</p>';
+        grid.innerHTML = `<p style="text-align:center;color:var(--text-secondary);font-size:0.9rem;">
+          No projects in this category yet.
+        </p>`;
         return;
       }
 
@@ -496,13 +548,13 @@ class PortfolioApp {
 
     renderCards("all");
 
-    // filter buttons
     document.querySelectorAll(".filter-chip").forEach((chip) => {
       chip.addEventListener("click", () => {
         document
           .querySelectorAll(".filter-chip")
           .forEach((c) => c.classList.remove("active"));
         chip.classList.add("active");
+
         const filter = chip.getAttribute("data-filter");
         renderCards(filter);
         this.playClickSound();
@@ -590,7 +642,6 @@ class PortfolioApp {
       )
       .join("");
 
-    // ripple effect
     document.querySelectorAll(".social-link").forEach((link) => {
       link.addEventListener("click", (e) => {
         this.playClickSound();
@@ -759,7 +810,8 @@ class PortfolioApp {
           );
           if (!target) return;
           e.preventDefault();
-          const headerHeight = document.getElementById("header").offsetHeight;
+          const headerHeight =
+            document.getElementById("header").offsetHeight;
           window.scrollTo({
             top: target.offsetTop - headerHeight + 1,
             behavior: "smooth"
@@ -788,7 +840,6 @@ class PortfolioApp {
     resize();
     window.addEventListener("resize", resize);
 
-    // build particles
     for (let i = 0; i < 60; i++) {
       this.particles.push({
         x: Math.random() * canvas.width,
@@ -829,18 +880,14 @@ class PortfolioApp {
   }
 }
 
-// ------------ Init ------------
+// ---------- Init ----------
 document.addEventListener("DOMContentLoaded", () => {
   new PortfolioApp();
 
   console.log(`
 ✨ Welcome to Satwik's Portfolio (Console View)
-• Stack: HTML + CSS + Vanilla JS
-• Features: Dark/Light theme, animated sections, project filters, particle background.
-Explore the code and enjoy!
   `);
 
-  // Konami easter egg
   const sequence = [
     "ArrowUp",
     "ArrowUp",
@@ -869,7 +916,6 @@ Explore the code and enjoy!
   });
 });
 
-// Optional service worker (ignored if not present)
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("/sw.js").catch(() => {});
