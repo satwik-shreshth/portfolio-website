@@ -12,7 +12,7 @@ const portfolioData = {
     github: "https://github.com/satwik-shreshth",
     portfolio: "https://satwik-shreshth.github.io/Satwik-Portolio/",
     resume:
-      "https://drive.google.com/file/d/1sQ3UfSMGn2rYDhONTGmJTBT4BRqf0V9y/view?usp=drive_link"
+      "https://drive.google.com/file/d/1RkkBdYa98IK0ZqCG6L50PQvPEp_3ljQV/view?usp=sharing"
   },
 
   // ---------- Certifications ----------
@@ -259,7 +259,7 @@ const portfolioData = {
     {
       name: "Resume (PDF)",
       url:
-        "https://drive.google.com/file/d/1sQ3UfSMGn2rYDhONTGmJTBT4BRqf0V9y/view?usp=drive_link",
+        "https://drive.google.com/file/d/1RkkBdYa98IK0ZqCG6L50PQvPEp_3ljQV/view?usp=sharing",
       icon: "📄",
       platform: "resume",
       description: "Download my latest resume"
@@ -921,3 +921,4 @@ if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("/sw.js").catch(() => {});
   });
 }
+
